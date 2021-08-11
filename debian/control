@@ -1,0 +1,12 @@
+Source: ros-noetic-clober-navigation
+Section: misc
+Priority: optional
+Maintainer: clobot-git <ros@clobot.co.kr>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-amcl, ros-noetic-base-local-planner, ros-noetic-catkin, ros-noetic-costmap-2d, ros-noetic-costmap-converter, ros-noetic-map-server, ros-noetic-move-base, ros-noetic-roslint, ros-noetic-teb-local-planner
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-noetic-clober-navigation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-amcl, ros-noetic-base-local-planner, ros-noetic-costmap-2d, ros-noetic-costmap-converter, ros-noetic-map-server, ros-noetic-move-base, ros-noetic-teb-local-planner
+Description: This package includes launch files for navigation
