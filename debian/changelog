@@ -1,0 +1,26 @@
+ros-noetic-clober-serial (1.0.3-1buster) buster; urgency=high
+
+  * add license in package.xml
+  * Contributors: clobot-git
+
+ -- clobot-git <ros@clobot.co.kr>  Tue, 10 Aug 2021 15:00:00 -0000
+
+ros-noetic-clober-serial (1.0.2-1buster) buster; urgency=high
+
+  * add suntech map & nav configuration
+  * clober serial test
+  * add feedback topic
+  * add ekf & myAHRS nodes
+  * add rules
+  * edit png filename
+  * edit nodehandler for params
+  * add launch
+  * add serial code
+  * Merge pull request #8 <https://github.com/CLOBOT-Co-Ltd/clober/issues/8> from clobot-git/noetic-devel
+    add clober_serial package
+  * add clober_serial package
+  * Contributors: CLOBOT, ClobotLucy, clobot-git, dev, roas
+
+ -- clobot-git <ros@clobot.co.kr>  Tue, 10 Aug 2021 15:00:00 -0000
+
+
