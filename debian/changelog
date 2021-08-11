@@ -1,0 +1,21 @@
+ros-noetic-clober-bringup (1.0.3-1focal) focal; urgency=high
+
+  * add license in package.xml
+  * Contributors: clobot-git
+
+ -- clobot-git <ros@clobot.co.kr>  Tue, 10 Aug 2021 15:00:00 -0000
+
+ros-noetic-clober-bringup (1.0.2-1focal) focal; urgency=high
+
+  * add suntech map & nav configuration
+  * clober serial test
+  * add ekf & myAHRS nodes
+  * Update README.md
+  * add rules
+  * edit nodehandler for params
+  * add launch
+  * Contributors: CLOBOT, ClobotLucy, clobot-git, dev, roas
+
+ -- clobot-git <ros@clobot.co.kr>  Tue, 10 Aug 2021 15:00:00 -0000
+
+
