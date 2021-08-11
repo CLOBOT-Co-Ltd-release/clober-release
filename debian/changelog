@@ -1,0 +1,28 @@
+ros-noetic-clober-slam (1.0.3-1focal) focal; urgency=high
+
+
+
+ -- clobot-git <ros@clobot.co.kr>  Tue, 10 Aug 2021 15:00:00 -0000
+
+ros-noetic-clober-slam (1.0.2-1focal) focal; urgency=high
+
+  * Merge pull request #7 <https://github.com/CLOBOT-Co-Ltd/clober/issues/7> from clobot-git/noetic-devel
+    Noetic devel
+  * modify clober_slam CMakeLists.txt
+  * Contributors: CLOBOT, clobot-git
+
+ -- clobot-git <ros@clobot.co.kr>  Tue, 10 Aug 2021 15:00:00 -0000
+
+ros-noetic-clober-slam (1.0.1-1focal) focal; urgency=high
+
+
+
+ -- clobot-git <ros@clobot.co.kr>  Sun, 11 Jul 2021 15:00:00 -0000
+
+ros-noetic-clober-slam (1.0.0-1focal) focal; urgency=high
+
+  * Initial Clober package
+
+ -- clobot-git <ros@clobot.co.kr>  Sun, 11 Jul 2021 15:00:00 -0000
+
+
