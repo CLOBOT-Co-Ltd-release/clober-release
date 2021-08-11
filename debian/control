@@ -1,0 +1,12 @@
+Source: ros-noetic-clober-teleop
+Section: misc
+Priority: optional
+Maintainer: clobot-git <ros@clobot.co.kr>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-noetic-clober-teleop
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: The meta package for Clober Teleoperator
