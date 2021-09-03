@@ -76,7 +76,7 @@ class CloberSerial{
 
         void cmd_vel_callback(const geometry_msgs::Twist::ConstPtr &msg);
         void updatePose();
-        void updatePose(float dL, float dR);
+        void updatePose(double dL, double dR);
 
         void on_motor_move(MotorCommand cmd);
 
@@ -97,6 +97,10 @@ class CloberSerial{
 
         void sendRPM(pair<int,int> channel, pair<float,float> rpm);
         void sendStop(pair<int,int> channel);
+
+        void sendHeardBeat();
+        void restartScript();
+
 
     private:    
         ros::Time timestamp_;
@@ -132,8 +136,8 @@ class CloberSerial{
         float linearVel_;
         float angularVel_;
         
-        float posX_;
-        float posY_;
+        double posX_;
+        double posY_;
         float heading_;
 
         bool trigger_;
