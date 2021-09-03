@@ -1,39 +1,43 @@
-# Clober!
-<img align="center" src="https://github.com/clobot-git/clober/blob/noetic-devel/images/clober_right.png" width="400">
+# Install development tools
+Install development tools for a smooth installation.
+```
+sudo apt install curl git
+```
 
-## ROS 1 Packages for Clober
-[![Licence](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-|ROS1|Noetic + Ubuntu Focal|
-|:---:|:---:|
-|Branch|[`neotic-branch`](https://github.com/clobot-git/clober/tree/noetic-devel)|
-|Travis-CI|[![Build Status](https://travis-ci.com/clobot-git/clober.svg?branch=noetic-devel)](https://travis-ci.com/clobot-git/clober)|
+# 1. Installation
+### 1.1 Install ROS 1.0 (Noetic)
+http://wiki.ros.org/noetic/Installation
 
-## ROS 2 Packages for Clober
-[![Licence](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-|ROS2|Foxy + Ubuntu Focal|Galactic|
-|:---:|:---:|:---:|
-|Branch|[`foxy-devel`](https://github.com/clobot-git/clober/tree/foxy-devel)| TBD |
-|Travis-CI|[![Build Status](https://travis-ci.com/clobot-git/clober.svg?branch=foxy-devel)](https://travis-ci.com/clobot-git/clober)| TBD |
-|Linter|[![Lint](https://github.com/clobot-git/clober/workflows/Lint/badge.svg?branch=foxy-devel)](https://github.com/clobot-git/clober/actions)| TBD |
 
-## Clobot gitbook for Clober Manual
-- [Manual for Clober](https://app.gitbook.com/@clobot-git/s/clober-manual/)
+### 1.3 Install related packages
+```
+sudo apt-get install ros-noetic-teleop-twist-keyboard
+sudo apt-get install libgeographic-dev
+sudo apt-get install ros-noetic-geographic-msgs
+```
 
-## Wiki for Clober Packages
-- http://wiki.ros.org/clober 
-- http://wiki.ros.org/clober_bringup 
-- http://wiki.ros.org/clober_description
-- http://wiki.ros.org/clober_teleop
-- http://wiki.ros.org/clober_slam
-- http://wiki.ros.org/clober_navigation
-- http://wiki.ros.org/clober_simulation
+### 1.4 Install Clober Packages
+```
+$ mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/
+wget https://raw.githubusercontent.com/CLOBOT-Co-Ltd/clober/noetic-devel/clober.repos
+vcs import src < clober.repos
+cd ~/catkin_ws && catkin_make
+source ~/catkin_ws/devel/setup.bash
+```
 
-## Clobot developed Opensource packages
-- [ FreeFleet ](http://wiki.ros.org/RMF/FreeFleet)
-- [ Scheduler ](http://wiki.ros.org/RMF/Scheduler)
-- [ Multi Map Traffic Editor ](http://wiki.ros.org/RMF/traffic_editor)
+### 1.5 Install other dependencies
+```
+cd ~/catkin_ws/
+source /opt/ros/noetic/setup.bash
+rosdep update
+rosdep install --from-paths src --ignore-src -r -y --rosdistro noetic
+```
 
-## Pages Relevant to Clober
-- [ Clobot Homepage ](https://www.clobot.co.kr/)
-- [ Clobot YouTube ](https://www.youtube.com/channel/UCau5FLJpMxhvW-IHZ8c8qKQ/featured/)
+## 2. Launch Bringup package
+```bash
+cd ~/catkin_ws/src/clober/clober_bringup/rules
+./create_udev_rules.sh
+roslaunch clober_bringup base.launch
+```
 
