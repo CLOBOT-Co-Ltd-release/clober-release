@@ -1,5 +1,5 @@
 # Clober!
-<img align="center" src="https://github.com/clobot-git/clober/blob/noetic-devel/images/clober_right.png" width="400">
+<img align="center" src="https://github.com/clobot-git/clober/blob/noetic-devel/images/logo.png" width="400">
 
 ## ROS 1 Packages for Clober
 [![Licence](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -7,6 +7,7 @@
 |:---:|:---:|
 |Branch|[`neotic-branch`](https://github.com/clobot-git/clober/tree/noetic-devel)|
 |Travis-CI|[![Build Status](https://travis-ci.com/clobot-git/clober.svg?branch=noetic-devel)](https://travis-ci.com/clobot-git/clober)|
+|Linter|[![Lint](https://github.com/clobot-git/clober/workflows/Lint/badge.svg?branch=noetic-devel)](https://github.com/clobot-git/clober/actions)|
 
 ## ROS 2 Packages for Clober
 [![Licence](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -20,10 +21,10 @@
 - [Manual for Clober](https://app.gitbook.com/@clobot-git/s/clober-manual/)
 
 ## Wiki for Clober Packages
-- http://wiki.ros.org/clober 
-- http://wiki.ros.org/clober_bringup 
+- http://wiki.ros.org/clober (metapackage)
+- http://wiki.ros.org/clober_bringup (under_development)
 - http://wiki.ros.org/clober_description
-- http://wiki.ros.org/clober_teleop
+- http://wiki.ros.org/clober_teleop (under_development)
 - http://wiki.ros.org/clober_slam
 - http://wiki.ros.org/clober_navigation
 - http://wiki.ros.org/clober_simulation
